@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="./images/pink_girl.jpg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div
+      class="flex bg-pink-200 w-full h-screen items-center justify-center"
+      style="background-color: #f3a3c0"
+    >
+      <div class="w-64 flex flex-col" style="width: 250px">
+        <!-- Image -->
+        <div
+          style="
+            height: 260px;
+            user-select: none;
+            box-shadow: 0 15px 55px rgb(0 0 0 / 80%);
+          "
+          class="w-full shadow-xl relative rounded overflow-hidden shadow-2xl"
+        >
+          <img
+            src="./images/pink_girl.jpg"
+            alt="handsome boy"
+            class="h-full w-full"
+            style="object-fit: cover; object-position: center center"
+          />
+          <div class="absolute bottom-2 w-full flex flex-col items-center">
+            <span class="font-bold text-lg text-white drop-shadow-md uppercase"
+              >Siobhan Wangui</span
+            >
+            <span class="text-white text-sm -mt-1"
+              >Web Developer and Engineer</span
+            >
+          </div>
+        </div>
+
+        <!-- Followers -->
+        <div
+          class="transform -translate-y-2 flex bg-white rounded w-5/6 self-center justify-around p-2 pt-4 z-50 shadow-xl"
+          style="box-shadow: 0 5px 55px rgb(0 0 0 / 70%)"
+        >
+          <div class="flex flex-col items-center">
+            <p class="font-bold">100+</p>
+            <p class="text-xs text-gray-400 lowercase">Projects</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <p class="font-bold">6751</p>
+            <p class="text-xs text-gray-400 lowercase">Followers</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <p class="font-bold">50+</p>
+            <p class="text-xs text-gray-400 lowercase">articles</p>
+          </div>
+        </div>
+
+        <!-- Follow button -->
+        <button
+          class="text-white uppercase font-normal bg-purple-500 p-4 transform -translate-y-4 w-3/5 flex items-center justify-center self-center rounded shadow-2xl tracking-wider"
+          style="user-select: none; box-shadow: 0 5px 55px rgb(0 0 0 / 80%)"
+        >
+          Follow
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
